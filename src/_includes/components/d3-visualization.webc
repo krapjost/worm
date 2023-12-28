@@ -1,0 +1,9 @@
+<div id="svg-container" style="width: 100%; height: 100%;">
+  <svg id="d3-graph"></svg>
+</div>
+
+<style webc:scoped>
+  :host {
+    flex-grow: 1;
+  }
+</style>

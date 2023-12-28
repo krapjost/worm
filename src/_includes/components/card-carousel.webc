@@ -1,0 +1,39 @@
+<script webc:setup>
+	function getItemList(collections, tag, limit=0) {
+		let result = [...collections[tag]].reverse();
+		const list = limit ? result.slice(0, limit) : result;
+    return list
+	}
+</script>
+
+<div class="flow" style="--space: var(--space-l)">
+	<article webc:for="item of getItemList($data.collections, tag, limit)">
+		<div class="flow" style="--space: var(--space-xs)">
+			<header>
+				<a :href="item.url" @raw="item.data.title"></a>
+			</header>
+      <extract-blockquote :@value="item.data.content"></extract-blockquote>
+			<footer>
+				<strong>Updated:</strong>
+				<time :@value="item.date" @machine-format="yyyy-LL-dd"></time>
+			</footer>
+		</div>
+	</article>
+</div>
+
+<style webc:scoped>
+	:host {
+		display: block;
+	}
+
+	:host article header > a {
+		font-size: var(--step-2);
+		font-weight: bold;
+		line-height: var(--line-height-s);
+		text-decoration: none;
+	}
+
+	:host article blockquote > p {
+		font-size: var(--step-1);
+	}
+</style>

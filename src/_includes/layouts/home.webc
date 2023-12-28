@@ -1,0 +1,17 @@
+---
+layout: layouts/base.webc
+---
+
+<main>
+  <search-bar></search-bar>
+  <d3-visualization></d3-visualization>
+  <side-bar></side-bar>
+</main>
+
+<style webc:scoped>
+	:host {
+    display: flex;
+    height: 100%;
+    width: 100%;
+	}
+</style>

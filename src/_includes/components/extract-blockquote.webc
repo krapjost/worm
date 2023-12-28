@@ -1,0 +1,20 @@
+<script webc:type="js" webc:root="override">
+  const markdownIt = require("markdown-it");
+  const markdownItOptions = {
+    html: true,
+    linkify: true,
+  };
+
+  function extractBlockquote(content) {
+    const md = markdownIt(markdownItOptions)
+    const rendered = md.render(content);
+    const matches = rendered.match(/<blockquote>(.*?)<\/blockquote>/s);
+    if (matches && matches[1]) {
+      return matches[1].trim();
+    }
+
+    return "";
+  }
+
+	`<blockquote webc:raw>${extractBlockquote(value)}</blockquote>`
+</script>

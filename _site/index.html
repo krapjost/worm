@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="color-scheme" content="light dark">
+
+	
+
+	
+	<meta name="generator" content="Eleventy v2.0.1">
+
+	
+
+
+	<link rel="stylesheet" href="/style.css">
+	<style>.w3vuf0fq9{z-index:50;position:fixed;top:20px;left:50%;transform:translateX(-50%);display:flex;align-items:center;padding:5px 10px;background-color:var(--surface-2);border-radius:20px}.w3vuf0fq9 .mac-style-search{border:2px solid #ddd;border-radius:20px;padding:5px 10px;width:200px}.w3vuf0fq9 .mac-style-search:focus{outline:none;border-color:#aaa}.w3vuf0fq9 .search-icon{color:#aaa;margin-right:10px}
+.wd7uuczs6{flex-grow:1}
+.wz-g4rvg3{position:relative;box-sizing:border-box;height:100%;width:100px;min-width:10px}.wz-g4rvg3 #sidebar-content{overflow-y:auto;overflow-x:hidden;padding:2em 1.4em;height:100%;display:flex;flex-direction:column;align-content:center;align-items:center}.wz-g4rvg3 #sidebar-content article{max-width:60ch}.wz-g4rvg3 #sidebar-content article>header{margin-top:60px}.wz-g4rvg3 #resize-handle{position:absolute;background:var(--surface-2);left:0;top:0;bottom:0;width:8px;height:100%;cursor:ew-resize;z-index:10}.wz-g4rvg3 #resize-handle:hover{background:var(--surface-3)}
+.w_ytz3mnb{display:flex;height:100%;width:100%}</style>
+	<script></script>
+</head>
+
+<body>
+	<main class="w_ytz3mnb">
+  <search-bar class="w3vuf0fq9"><span class="search-icon">🔍</span>
+<input type="text" placeholder="Search" oninput="searchBooks(this.value)" class="mac-style-search">
+
+
+</search-bar>
+  <d3-visualization class="wd7uuczs6"><div id="svg-container" style="width: 100%; height: 100%">
+  <svg id="d3-graph"></svg>
+</div>
+
+
+</d3-visualization>
+  <side-bar class="wz-g4rvg3"><div id="resize-handle"></div>
+<div id="sidebar-content"></div>
+
+
+</side-bar>
+</main>
+
+
+
+
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script src="/assets/initD3Visualization.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+
+</body>
+</html>

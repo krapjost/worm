@@ -1,0 +1,9 @@
+<article>
+	<!-- <bread-crumbs></bread-crumbs> -->
+	<header>
+		<h1 @raw="title"></h1>
+    <p><time :@value="$data.page.date" @machine-format="yyyy-LL-dd"></time></p>
+	</header>
+	<div @raw="content"></div>
+  <backlinks :@value="$data.backlinks"></backlinks>
+</article>

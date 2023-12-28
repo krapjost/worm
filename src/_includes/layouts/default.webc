@@ -1,0 +1,13 @@
+---
+layout: layouts/base.webc
+---
+
+<main @raw="content"></main>
+
+<style webc:scoped>
+	:host {
+		display: block;
+    height: 100%;
+    width: 100%;
+	}
+</style>

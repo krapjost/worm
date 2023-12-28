@@ -1,0 +1,8 @@
+{
+  "title": "Worm",
+  "description": "worm and guy's book discussion",
+  "author": "krapjost",
+  "baseurl": "",
+  "numRecent": 3,
+  "dateFormat": "d LLLL yyyy"
+}

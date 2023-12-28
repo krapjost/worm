@@ -1,0 +1,22 @@
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/dialogues">dialogues</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style webc:scoped>
+  header {
+    padding: 1rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+</style>

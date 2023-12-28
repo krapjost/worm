@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="color-scheme" content="light dark">
+
+	<title webc:is="meta-title" webc:nokeep></title>
+
+	<meta webc:is="meta-social" webc:nokeep>
+	<meta name="generator" :content="eleventy.generator">
+
+	<link webc:is="link-canonical" webc:nokeep>
+
+
+	<link rel="stylesheet" href="/style.css" webc:raw>
+	<style @raw="getCSS(page.url)" webc:keep></style>
+	<script @raw="getJS(page.url)" webc:keep></script>
+</head>
+
+<body>
+	<template @raw="content" webc:nokeep></template>
+</body>
+
+<script webc:keep src="https://d3js.org/d3.v6.min.js"></script>
+<script webc:keep src="/assets/initD3Visualization.js"></script>
+<script webc:keep src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+</html>

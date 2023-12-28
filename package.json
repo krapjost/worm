@@ -1,0 +1,29 @@
+{
+  "name": "worm",
+  "version": "0.0.1",
+  "description": "worm's book garden",
+  "scripts": {
+    "start": "node pre-process && eleventy --serve --quiet",
+    "compile": "eleventy"
+  },
+  "keywords": [],
+  "author": "krapjost",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "glob": "^10.3.10",
+    "markdown-it": "^12.3.2",
+    "markdown-it-attrs": "^4.1.4",
+    "markdown-it-footnote": "^3.0.3",
+    "open-props": "^1.6.16",
+    "postcss": "^8.4.32",
+    "postcss-import": "^15.1.0",
+    "title-case": "^3.0.3"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "@11ty/webc": "^0.11.4",
+    "fuse.js": "^7.0.0",
+    "luxon": "^3.4.4"
+  }
+}

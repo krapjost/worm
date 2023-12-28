@@ -1,0 +1,14 @@
+<script webc:setup>
+	function log(data) {
+    return data
+	}
+</script>
+
+<hr></hr>
+<h2>Backlinks</h2>
+<ul webc:for="item of log(value)">
+  <li>
+    <a :href="item.url" @text="item.title"></a>
+    <div role="none" @raw="markdownify(item.preview)"></div>
+  </li>
+</ul>

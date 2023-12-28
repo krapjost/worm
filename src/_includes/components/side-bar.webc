@@ -1,0 +1,42 @@
+<div id="resize-handle"></div>
+<div id="sidebar-content"></div>
+
+<style webc:scoped>
+  :host {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100px;
+    min-width: 10px;
+  }
+  :host #sidebar-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2em 1.4em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  :host #sidebar-content article {
+    max-width: 60ch;
+  }
+  :host #sidebar-content article > header {
+    margin-top: 60px;
+  }
+  :host #resize-handle {
+    position: absolute;
+    background: var(--surface-2);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px; /* Width of the resize area */
+    height: 100%;
+    cursor: ew-resize; /* Cursor indicates resizable area */
+    z-index: 10; /* Ensure it's above the sidebar content */
+  }
+  :host #resize-handle:hover {
+    background: var(--surface-3);
+  }
+</style>
