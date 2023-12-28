@@ -4,7 +4,7 @@
   "description": "worm's book garden",
   "scripts": {
     "start": "node pre-process && eleventy --serve --quiet",
-    "compile": "eleventy"
+    "build": "node pre-process && eleventy"
   },
   "keywords": [],
   "author": "krapjost",
